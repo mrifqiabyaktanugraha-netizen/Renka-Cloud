@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Reincity Cloud - Penyedia layanan cloud modern: compute, storage, database, networking, AI" />
+  <meta name="theme-color" content="#062E3A" />
+  <title>Reincity Cloud — Penyedia Layanan Cloud</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-sea min-h-screen text-slate-100 antialiased" data-page="home">
+  <div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-b from-[#00121a]/80 to-[#00141a]/90">
+    <div class="animate-pulse text-center">
+      <img src="assets/logo.svg" alt="Reincity" class="w-20 h-20 mx-auto mb-4" />
+      <div class="text-slate-200">Memuat Reincity Cloud...</div>
+    </div>
+  </div>
+  <header class="backdrop-blur-sm sticky top-0 z-50">
+  <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between" aria-label="Main navigation">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/logo.svg" alt="Reincity Cloud logo" class="w-12 h-12 neon" />
+        <span class="text-2xl font-extrabold tracking-tight neon-text">Reincity Cloud</span>
+      </a>
+      <div class="hidden md:flex items-center gap-6">
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="docs.html" class="nav-link">Documentation</a>
+        <a href="#pricing" class="nav-link">Price</a>
+        <button id="open-signup" class="btn-primary" aria-haspopup="dialog">Mulai</button>
+      </div>
+      <button id="nav-toggle" class="md:hidden p-2 rounded-md border border-slate-700">
+        <span class="sr-only">Buka menu</span>
+        <svg width="24" height="24" fill="none" stroke="currentColor" class="text-slate-200"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"/></svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="md:hidden hidden px-6 pb-4" aria-hidden="true">
+      <a href="services.html" class="block py-2">Layanan</a>
+      <a href="docs.html" class="block py-2">Dokumentasi</a>
+      <a href="#pricing" class="block py-2">Harga</a>
+      <button id="open-signup-mobile" class="block w-full text-left py-2">Mulai</button>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-12">
+    <!-- Hero -->
+    <section class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-5xl md:text-6xl font-extrabold leading-tight neon-text">Reincity Cloud</h1>
+        <p class="mt-6 text-lg text-slate-200/85">Solusi cloud modern untuk pembangunan aplikasi yang cepat, aman, dan terukur. Compute, Storage, Database, Networking, dan layanan AI — semua dalam satu platform.</p>
+
+        <div class="mt-8 flex gap-4">
+          <a href="#pricing" class="btn-primary">Coba Sekarang</a>
+          <a href="docs.html" class="btn-ghost">Lihat Dokumentasi</a>
+        </div>
+
+        <div class="mt-8 flex items-center gap-4 text-sm text-slate-300">
+          <div class="p-3 rounded-lg bg-slate-800/30 neon-card">
+            <strong>99.99%</strong>
+            <div>Uptime SLA</div>
+          </div>
+          <div class="p-3 rounded-lg bg-slate-800/30 neon-card">
+            <strong>Skalabilitas</strong>
+            <div>Auto-scaling</div>
+          </div>
+          <div class="p-3 rounded-lg bg-slate-800/30 neon-card">
+            <strong>Bayar sesuai pakai</strong>
+            <div>Tanpa komitmen</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="mock-cloud p-8 rounded-2xl shadow-2xl">
+          <img src="assets/logo.svg" alt="Reincity" class="w-20 h-20 mx-auto" />
+          <h3 class="text-center mt-4 font-semibold neon-text">Platform Reincity</h3>
+          <p class="mt-2 text-center text-sm text-slate-200/80">Kelola infrastruktur Anda dengan antarmuka yang mudah dan API yang kuat.</p>
+
+          <div class="mt-6 grid grid-cols-2 gap-4">
+            <div class="feature-card" data-feature="Compute" tabindex="0">Compute</div>
+            <div class="feature-card" data-feature="Storage" tabindex="0">Storage</div>
+            <div class="feature-card" data-feature="Database" tabindex="0">Database</div>
+            <div class="feature-card" data-feature="AI" tabindex="0">AI / ML</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="mt-20">
+      <h2 class="text-3xl font-bold neon-text">Layanan Kami</h2>
+      <p class="mt-3 text-slate-300/85">Beragam layanan untuk kebutuhan modern: </p>
+
+      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="card">
+          <h3 class="font-semibold">Compute</h3>
+          <p class="mt-2 text-sm text-slate-300">VM, container, dan serverless yang cepat.</p>
+        </article>
+        <article class="card">
+          <h3 class="font-semibold">Storage</h3>
+          <p class="mt-2 text-sm text-slate-300">Object storage dan block storage terdistribusi.</p>
+        </article>
+        <article class="card">
+          <h3 class="font-semibold">Database</h3>
+          <p class="mt-2 text-sm text-slate-300">Relasional dan NoSQL terkelola.</p>
+        </article>
+        <article class="card">
+          <h3 class="font-semibold">Networking</h3>
+          <p class="mt-2 text-sm text-slate-300">VPC, load balancer, dan CDN global.</p>
+        </article>
+        <article class="card">
+          <h3 class="font-semibold">AI & ML</h3>
+          <p class="mt-2 text-sm text-slate-300">Model terkelola dan inferensi real-time.</p>
+        </article>
+        <article class="card">
+          <h3 class="font-semibold">Keamanan</h3>
+          <p class="mt-2 text-sm text-slate-300">IAM, enkripsi, dan audit lengkap.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="mt-20">
+      <h2 class="text-3xl font-bold neon-text">Harga</h2>
+      <p class="mt-3 text-slate-300/85">Pilih paket yang sesuai dengan kebutuhan — fleksibel dan transparan.</p>
+
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="price-card neon-card">
+          <div class="badge">Gratis</div>
+          <div class="mt-4 text-4xl font-extrabold"><span class="price-amount">Rp0</span><span class="text-base">/bln</span></div>
+          <ul class="mt-4 text-sm space-y-2">
+            <li>1 vCPU</li>
+            <li>10 GB Storage</li>
+            <li>Kredit percobaan 100k</li>
+          </ul>
+          <a class="btn-primary mt-6 block text-center" href="#">Pilih</a>
+        </div>
+
+        <div class="price-card neon-card featured">
+          <div class="badge">Populer</div>
+          <div class="mt-4 text-4xl font-extrabold"><span class="price-amount">Rp200.000</span><span class="text-base">/bln</span></div>
+          <ul class="mt-4 text-sm space-y-2">
+            <li>2 vCPU</li>
+            <li>50 GB Storage</li>
+            <li>Support 24/7</li>
+          </ul>
+          <a class="btn-primary mt-6 block text-center" href="#">Pilih</a>
+        </div>
+
+        <div class="price-card neon-card">
+          <div class="badge">Enterprise</div>
+          <div class="mt-4 text-4xl font-extrabold">Hubungi Kami</div>
+          <ul class="mt-4 text-sm space-y-2">
+            <li>Skalabilitas tak terbatas</li>
+            <li>SLA khusus</li>
+            <li>Manajemen akun</li>
+          </ul>
+          <a class="btn-primary mt-6 block text-center" href="#contact">Hubungi</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing toggle -->
+    <div class="mt-6 flex items-center gap-3 text-sm text-slate-300">
+      <div>Tampilkan harga:</div>
+      <div class="inline-flex items-center bg-slate-800/30 p-1 rounded-full">
+        <button id="toggle-monthly" class="px-3 py-1 rounded-full bg-slate-900/20">Bulanan</button>
+        <button id="toggle-yearly" class="px-3 py-1 rounded-full">Tahunan (hemat 20%)</button>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-20">
+      <h2 class="text-3xl font-bold neon-text">Hubungi Kami</h2>
+      <p class="mt-3 text-slate-300/85">Tertarik? Kirim pesan singkat dan tim kami akan menghubungi Anda.</p>
+
+      <form class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4" onsubmit="handleContact(event)">
+        <input required aria-label="nama" class="p-3 bg-slate-800/40 rounded" placeholder="Nama" />
+        <input required type="email" aria-label="email" class="p-3 bg-slate-800/40 rounded" placeholder="Email" />
+        <textarea required aria-label="pesan" class="p-3 bg-slate-800/40 rounded col-span-1 sm:col-span-2" placeholder="Pesan Anda"></textarea>
+        <button class="btn-primary col-span-1 sm:col-span-2" type="submit">Kirim</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="mt-20 py-8 border-t border-slate-700/30">
+    <div class="max-w-6xl mx-auto px-6 text-sm text-slate-400">© 2025 Reincity Cloud — Semua hak dilindungi.</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

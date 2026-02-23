@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dokumentasi — Reincity Cloud</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-sea min-h-screen text-slate-100">
+  <header class="py-6 px-6">
+    <a href="index.html" class="flex items-center gap-3"><img src="assets/logo.svg" class="w-10 h-10 neon" alt="logo" /><span class="neon-text font-bold">Reincity Cloud</span></a>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 py-12">
+    <h1 class="text-3xl font-extrabold neon-text">Dokumentasi Singkat</h1>
+    <p class="mt-3 text-slate-300">Contoh endpoint API dan cara cepat memulai.</p>
+
+    <section class="mt-8">
+      <h2 class="font-semibold">Membuat VM</h2>
+      <pre class="mt-3 bg-slate-900/40 p-4 rounded text-sm overflow-x-auto">POST /api/v1/compute
+{
+  "name": "web-server-1",
+  "image": "ubuntu-24.04",
+  "cpu": 2,
+  "memory_gb": 4
+}
+</pre>
+
+      <h2 class="mt-6 font-semibold">Penyimpanan Objek</h2>
+      <p class="mt-2 text-sm">Gunakan endpoint S3-compatible untuk mengunggah objek.</p>
+    </section>
+    
+      <section class="mt-8">
+        <h2 class="font-semibold">Contoh CLI singkat</h2>
+        <pre class="mt-3 bg-slate-900/40 p-4 rounded text-sm overflow-x-auto"># Login (demo)
+  # reincity auth login --email you@example.com
+
+  # Buat VM
+  # reincity compute create --name web-1 --image ubuntu-24.04 --cpu 2 --memory 4
+  </pre>
+      </section>
+  </main>
+
+  <footer class="py-8 text-sm text-slate-400 text-center">© 2025 Reincity Cloud</footer>
+</body>
+</html>

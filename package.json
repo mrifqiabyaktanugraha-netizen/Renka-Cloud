@@ -1,0 +1,8 @@
+{
+  "name": "reincity-cloud-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npx http-server . -p 8000 -c-1"
+  }
+}

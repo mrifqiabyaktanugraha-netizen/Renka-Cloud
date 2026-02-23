@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Layanan — Reincity Cloud</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-sea min-h-screen text-slate-100">
+  <header class="py-6 px-6">
+    <a href="index.html" class="flex items-center gap-3"><img src="assets/logo.svg" class="w-10 h-10 neon" alt="logo" /><span class="neon-text font-bold">Reincity Cloud</span></a>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 py-12">
+    <h1 class="text-4xl font-extrabold neon-text">Layanan Kami</h1>
+    <p class="mt-3 text-slate-300">Rincian layanan dan fitur teknis.</p>
+
+    <section class="mt-8 grid md:grid-cols-3 gap-6">
+      <article class="p-6 bg-slate-900/40 rounded-lg neon-card">
+        <h2 class="font-semibold">Compute</h2>
+        <p class="mt-2 text-sm">VM, container, dan fungsi serverless. Fleksibel untuk beban kerja apa pun. Auto-scaling dan integrasi CI/CD.</p>
+      </article>
+
+      <article class="p-6 bg-slate-900/40 rounded-lg neon-card">
+        <h2 class="font-semibold">Storage</h2>
+        <p class="mt-2 text-sm">Object storage untuk data skala besar, block storage untuk performa tinggi, dengan opsi lifecycle dan enkripsi.</p>
+      </article>
+
+      <article class="p-6 bg-slate-900/40 rounded-lg neon-card">
+        <h2 class="font-semibold">Database</h2>
+        <p class="mt-2 text-sm">Database terkelola (Postgres, MySQL, Redis). Backup, replikasi, dan failover otomatis.</p>
+      </article>
+    </section>
+
+    <!-- Instance Types -->
+    <section class="mt-12">
+      <h2 class="text-2xl font-bold neon-text">Instance Types — Intel &amp; Ryzen</h2>
+      <p class="mt-2 text-slate-300 text-sm">Pilih prosesor dan kelas instance sesuai kebutuhan: kelas bawah untuk beban ringan, kelas atas untuk beban berat dan komputasi tinggi.</p>
+
+      <div class="mt-6 flex items-center gap-3">
+        <button class="vendor-btn btn-ghost" data-vendor="all">Semua</button>
+        <button class="vendor-btn btn-ghost" data-vendor="intel">Intel</button>
+        <button class="vendor-btn btn-ghost" data-vendor="ryzen">Ryzen</button>
+      </div>
+
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4" id="instances-list">
+        <!-- Intel Starter -->
+        <article class="instance-card neon-card" data-vendor="intel" data-tier="starter" tabindex="0">
+          <h3 class="font-semibold">Intel — Starter</h3>
+          <div class="text-sm mt-2">1 vCPU (Intel), 1 GB RAM, 20 GB SSD</div>
+          <div class="mt-3 font-bold">Rp15.000/bln</div>
+        </article>
+
+        <!-- Intel General -->
+        <article class="instance-card neon-card" data-vendor="intel" data-tier="general" tabindex="0">
+          <h3 class="font-semibold">Intel — General</h3>
+          <div class="text-sm mt-2">2 vCPU (Intel), 4 GB RAM, 80 GB NVMe</div>
+          <div class="mt-3 font-bold">Rp75.000/bln</div>
+        </article>
+
+        <!-- Intel Compute -->
+        <article class="instance-card neon-card" data-vendor="intel" data-tier="compute" tabindex="0">
+          <h3 class="font-semibold">Intel — Compute</h3>
+          <div class="text-sm mt-2">4 vCPU (Intel Xeon), 8 GB RAM, 160 GB NVMe</div>
+          <div class="mt-3 font-bold">Rp299.000/bln</div>
+        </article>
+
+        <!-- Ryzen Starter -->
+        <article class="instance-card neon-card" data-vendor="ryzen" data-tier="starter" tabindex="0">
+          <h3 class="font-semibold">Ryzen — Starter</h3>
+          <div class="text-sm mt-2">1 vCPU (Ryzen), 1 GB RAM, 20 GB SSD</div>
+          <div class="mt-3 font-bold">Rp14.000/bln</div>
+        </article>
+
+        <!-- Ryzen General -->
+        <article class="instance-card neon-card" data-vendor="ryzen" data-tier="general" tabindex="0">
+          <h3 class="font-semibold">Ryzen — General</h3>
+          <div class="text-sm mt-2">2 vCPU (Ryzen), 4 GB RAM, 80 GB NVMe</div>
+          <div class="mt-3 font-bold">Rp69.000/bln</div>
+        </article>
+
+        <!-- Ryzen High -->
+        <article class="instance-card neon-card" data-vendor="ryzen" data-tier="high" tabindex="0">
+          <h3 class="font-semibold">Ryzen — High</h3>
+          <div class="text-sm mt-2">8 vCPU (Ryzen Threadripper), 32 GB RAM, 500 GB NVMe</div>
+          <div class="mt-3 font-bold">Rp1.499.000/bln</div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-8 text-sm text-slate-400 text-center">© 2025 Reincity Cloud</footer>
+</body>
+</html>
