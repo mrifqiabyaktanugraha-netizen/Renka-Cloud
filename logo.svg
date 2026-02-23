@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none">
+  <rect width="160" height="160" rx="24" fill="#04293A"/>
+  <circle cx="80" cy="64" r="36" fill="#0EA5A9" opacity="0.06"/>
+  <g>
+    <path d="M58 96c8-12 22-20 36-20 18 0 32 14 32 32 0 6-4 10-10 10H60c-6 0-12-8-2-22z" fill="#7EE7F6" opacity="0.18"/>
+  </g>
+  <text x="50%" y="50%" font-family="Segoe UI, Roboto, Arial" font-size="40" fill="#CFFAFE" font-weight="700" dominant-baseline="middle" text-anchor="middle">R</text>
+</svg>

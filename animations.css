@@ -1,0 +1,119 @@
+/* Instance cards animations */
+.instance-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.instance-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(6,182,212,0.15);
+}
+
+.instance-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, transparent, rgba(51,255,243,0.08), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.instance-card:hover::before {
+  opacity: 1;
+}
+
+/* Vendor filter buttons */
+.vendor-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.vendor-btn.active {
+  background: rgba(51,255,243,0.1);
+  border-color: rgba(51,255,243,0.2);
+}
+
+/* Improved form inputs */
+input, textarea {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(51,255,243,0.06);
+}
+
+input:focus, textarea:focus {
+  border-color: rgba(51,255,243,0.2);
+  box-shadow: 0 0 0 2px rgba(51,255,243,0.1);
+  background: rgba(6,182,212,0.05);
+}
+
+/* Modal improvements */
+.modal {
+  animation: modalSlideIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Navigation links */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--neon);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Loading animations */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Scroll behavior */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+/* Mobile menu improvements */
+#mobile-menu {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(8px);
+}
+
+/* Focus styles */
+:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(51,255,243,0.2);
+}
